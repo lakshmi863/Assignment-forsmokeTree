@@ -1,0 +1,100 @@
+/* App.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; 
+}
+
+.App {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+fieldset {
+  border: 2px solid #007bff; 
+  border-radius: 8px; 
+  padding: 20px; 
+  background-color: #ffffff; 
+  box-shadow: 3px 3px red, -1em 0 .4em rgb(171, 171, 162);
+}
+
+legend {
+  font-weight: bold; 
+  font-size: 1.5em; 
+}
+
+label {
+  margin-right: 10px; 
+}
+
+input[type="text"] {
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  width: 100%; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(148, 184, 221, 0.5); 
+}
+
+button {
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+button:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed; 
+}
+
+p {
+  margin-top: 20px; 
+  font-size: 1.2em;
+}
+/* src/App.css */
+
+/* src/App.css */
+
+.submitted-data-container {
+  margin-top: 20px; /* Space above the data cards */
+}
+
+.submitted-data {
+  margin: 10px; /* Space between cards */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  animation: move-from-right 0.5s ease; /* Optional animation */
+}
+
+/* Keyframes for card animation */
+@keyframes move-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

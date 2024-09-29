@@ -1,0 +1,51 @@
+
+.modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    z-index: 1000; 
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 60px -16px teal;
+    text-align: center;
+    width: 300px; 
+    margin-top: 50px; 
+    margin-left: 20px; 
+}
+
+.card-container {
+    display: flex;
+    overflow: hidden; /* Hide overflow to keep cards inside the container */
+    white-space: nowrap; /* Prevent wrapping */
+    animation: scroll 15s linear infinite; /* Scroll animation */
+  }
+  
+  .card {
+    display: inline-block; /* Display cards inline */
+    margin-right: 20px; /* Space between cards */
+    padding: 20px;
+    background: lightgray; /* Background color for cards */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Keyframes for scrolling animation */
+  @keyframes scroll {
+    from {
+      transform: translateX(100%); /* Start from the right */
+    }
+    to {
+      transform: translateX(-100%); /* End at the left */
+    }
+  }
+  
